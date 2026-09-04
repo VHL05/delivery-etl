@@ -2,10 +2,15 @@
 .env
 *.json
 
-# Python & Environment
-__pycache__/
+# Python
 venv/
+__pycache__/
 *.pyc
+.DS_Store
 
 # ML Models
 *.pkl
+
+gcp-service-account.json
+# Data
+data/
