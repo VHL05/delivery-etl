@@ -1,0 +1,23 @@
+gcp:
+  project_id: "delivery-507606"
+  dataset_id: "delivery_dw"
+
+data:
+  target_col: "is_delayed"
+  numerical_cols: 
+    - "price"
+    - "freight_value"
+    - "product_weight_g"
+    - "product_volume"
+    - "distance_km"
+    - "is_weekend"
+    - "month"
+    - "day_of_week"
+    - "is_cross_state"
+    - "freight_ratio"
+  test_size: 0.2
+  random_state: 42
+
+model:
+  params: {}
+  save_path: "../../artifacts/delay_classifier.pkl"
